@@ -1,0 +1,76 @@
+/* Убираем отступы и паддинги */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Гарантируем наследование шрифтов */
+html {
+    font-size: 100%;
+    /* Устанавливает базовый размер шрифта */
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    /* Отключаем масштабирование текста на мобильных устройствах */
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+
+/* Устраняем различия в поведении ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Устраняем различия в таблицах */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Устраняем стили списка */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Убираем выделение для кнопок и ссылок */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* Убираем стандартные стили заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Глобальные стили изображений */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Гарантируем плавность для всех элементов */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+}
